@@ -4,7 +4,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from './components/Login';
-
+import Home from './components/Home';
 
 class HomeScreen extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
 const AppNavigator = createStackNavigator({
 
   Login: {
-    screen: Login
+    screen: Home
   }
 
 });
