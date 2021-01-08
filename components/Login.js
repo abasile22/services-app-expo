@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@abasile22 
-inteligenciafutura
-/
-app_cursos
-1
-00
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-app_cursos/components/Login.js /
-@inteligenciafutura
-inteligenciafutura Consultar en firebase
-Latest commit 5ac76f8 on Jul 1, 2020
- History
- 1 contributor
-75 lines (68 sloc)  1.96 KB
- 
 import React from 'react';
 import { AppLoading } from 'expo';
 import { Container, Button, Header, Item, Input, Footer, Content, Form, Text } from 'native-base';
@@ -104,15 +73,3 @@ export default class App extends React.Component {
     );
   }
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
