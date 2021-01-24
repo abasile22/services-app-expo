@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
 const AppNavigator = createStackNavigator({
 
   Login: {
-    screen: Home
+    screen: Login
   }
 
 });

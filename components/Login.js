@@ -3,9 +3,6 @@ import { AppLoading } from 'expo';
 import { Container, Button, Header, Item, Input, Footer, Content, Form, Text } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import { AsyncStorage, Alert } from 'react-native';
-
-import firebase from '../database/firebaseDb';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -28,10 +25,18 @@ export default class App extends React.Component {
         alert("Debe ingresar la contraseña")
         return;
       }
-      firebase.auth().signInWithEmailAndPassword(email,password).then(function(user){
-        //console.log(user)
-        alert( JSON.stringify(user))
-      })
+      fetch('https://mywebsite.com/endpoint/', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          firstParam: 'yourValue',
+          secondParam: 'yourOtherValue'
+        })
+      });
+      
       this.props.navigation.navigate('Tiendas')
     } catch (error) {
      console.log(error.toString())
